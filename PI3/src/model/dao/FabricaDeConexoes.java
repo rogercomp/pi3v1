@@ -16,7 +16,7 @@ public class FabricaDeConexoes {
 		}
 		try {
 			//dbc:mysql://localhost:3306/
-			return DriverManager.getConnection("jdbc:mysql://localhost:3306/sistema?useTimezone=true&serverTimezone=UTC", "root", "root");			
+			return DriverManager.getConnection("jdbc:mysql://localhost:3306/lanp?useTimezone=true&serverTimezone=UTC", "root", "root");			
 			
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
