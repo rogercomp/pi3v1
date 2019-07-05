@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -32,7 +33,7 @@
 						class="navbar-toggler-icon"></span>
 				</button>
 				<a class="navbar-brand"
-					href="http://localhost:8080/syslan/frontcontroller/login">LANP</a>
+					href="http://localhost:8080/lanp/frontcontroller/login">LANP</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="navbar-nav mr-auto">
@@ -48,7 +49,7 @@
 	</c:if>
 	<c:choose>
 		<c:when test="${usuario != NULL}">
-			<h1>Sistema de Lançamentos Pessoais</h1>
+			<h1>Sistema de LanÃ§amentos Pessoais</h1>
 			<hr>
 		</c:when>
 		<c:otherwise>
@@ -56,7 +57,7 @@
 			<div class="container">
 				<form action="login" method="post">
 					<div class="form-group">
-						<label class="form-control-label">Usuário</label> <input
+						<label class="form-control-label">UsuÃ¡rio</label> <input
 							type="text" class="form-control" name="usuario">
 					</div>
 					<div class="form-group">
@@ -74,7 +75,7 @@
 				<th>Nome</th>
 				<th>Usuario</th>
 				<th>Senha</th>
-				<th>Ações</th>
+				<th>AÃ§Ãµes</th>
 			</thead>
 			<tbody>
 				<c:forEach var="u" items="${usuarios}">

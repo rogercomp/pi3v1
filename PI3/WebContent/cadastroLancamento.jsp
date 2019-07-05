@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
@@ -40,7 +41,7 @@
 		<form action="cadastrarLancamento" method="post">
 			<div class="row mt-5">
 				<div class="col-sm-12 col-md-12 col-lg-12">
-					<h3>Novo Lançamento</h3>
+					<h3>Novo LanÃ§amento</h3>
 					<div class="row mt-3">
 						<div class="form-group col-sm-12 col-md-12 col-lg-12 ">
 							<div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -67,7 +68,7 @@
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-6 col-lg-6">
-							<label class="form-control-label">Descrição</label> <input
+							<label class="form-control-label">DescriÃ§Ã£o</label> <input
 								type="text" class="form-control" name="descricao">
 						</div>
 
@@ -84,7 +85,7 @@
 					</div>
 					<div class="row">
 						<div class="col-sm-12 col-md-9 col-lg-9">
-							<label class="form-control-label">Observação</label>
+							<label class="form-control-label">ObservaÃ§Ã£o</label>
 							<textarea rows="3" class="form-control" name="observacao"></textarea>
 						</div>
 					</div>

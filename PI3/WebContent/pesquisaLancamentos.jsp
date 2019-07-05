@@ -1,12 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,7 +22,7 @@
 <!--  <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script> -->
 <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<title>Listar Lançamentos</title>
+<title>Listar LanÃ§amentos</title>
 </head>
 <body>
 	<c:if test="${usuario != NULL}">
@@ -52,11 +53,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-12">
-					<h3 class="page-product-heading">Lançamentos</h3>
+					<h3 class="page-product-heading">LanÃ§amentos</h3>
 
 					<div class="row">
 						<div class="col-sm-6 col-md-3 col-lg-3">
-							<label class="form-control-label">Vencimento Início</label> <input
+							<label class="form-control-label">Vencimento InÃ­cio</label> <input
 								type="date" class="form-control" name="inicio">
 						</div>
 						<div class="col-sm-6 col-md-3 col-lg-3">
@@ -75,12 +76,12 @@
 			<div class="row mt-3">
 				<table class="table table-striped">
 					<thead>
-						<th>Descrição</th>
+						<th>DescriÃ§Ã£o</th>
 						<th>Natureza</th>
 						<th>Vencimento</th>
 						<th>Pagamento</th>
 						<th>Valor</th>
-						<th>Ações</th>
+						<th>AÃ§Ãµes</th>
 					</thead>
 					<tbody>
 						<c:forEach var="l" items="${lancamentos}">
@@ -109,7 +110,7 @@
 				<div class="row mt-2 ">
 					<div class="col-12">
 						<button type="button" class="btn btn-primary">Novo
-							Lançamento</button>
+							LanÃ§amento</button>
 					</div>
 				</div>
 			</div>
@@ -138,6 +139,6 @@
 			</div>
 		</c:otherwise>
 	</c:choose>
-
+    
 </body>
 </html>

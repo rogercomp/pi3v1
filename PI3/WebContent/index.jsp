@@ -1,58 +1,58 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
+<title>LANP</title>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LANP</title>
+
+<!-- FontAwesome JS -->
+
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
 	rel="stylesheet" type="text/css">
-<!-- FontAwesome JS -->
-<script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
-<script id="facebook-jssdk"
-	src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0"></script>
-<script
-	src="https://connect.facebook.net/en_US/sdk.js?hash=f6fc7cceb6d8616e8e3904c1632a9e5b&amp;ua=modern_es6"
-	async="" crossorigin="anonymous"></script>
+
+
+
+	
 <script defer=""
 	src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
 	integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9"
 	crossorigin="anonymous"></script>
+	
 <!-- Bootstrap CSS -->
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	crossorigin="anonymous">
-<link href="../css/style.css" rel="stylesheet" type="text/css" />
 
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
 <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+	
 </head>
 <body>
 	<c:choose>
 		<c:when test="${usuario != NULL}">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
-					<div class="navbar-header">
+					 <div class="navbar-header">
 						<button type="button" class="navbar-toggler"
 							data-toggle="collapse" data-target="#navbar">
 							<span class="sr-only">Toggle navigation</span> <span
 								class="navbar-toggler-icon"></span>
 						</button>
-						<a class="navbar-brand" href="http://localhost:8080/lanp/frontcontroller/login">LANP</a>
+						<a class="navbar-brand"
+							href="http://localhost:8080/lanp/frontcontroller/login">LANP</a>
 					</div>
-					<div id="navbar" class="navbar-collapse collapse">
-						<ul class="navbar-nav mr-auto">
+					
+					<div id="navbar" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-left">
 							<li class="nav-item active"><a class="nav-link"
-								href="listarLancamentoTodos">Lan&ccedil;amentos<span
+								href="listarLancamentoTodos">Lançamentos<span
 									class="sr-only">(current)</span></a></li>
-							<li><a class="nav-link" href="listarUsuarioTodos">Usu&aacute;rios</a></li>
+							<li><a class="nav-link" href="listarUsuarioTodos">Usuários</a></li>
 							<li><a class="nav-link" href="logout">Logout</a></li>
 						</ul>
 					</div>
@@ -62,10 +62,10 @@
 			<!-- Parte nova -->
 			<div class="container">
 				<h2 class="title text-center">O que é?</h2>
-				<p class="intro text-center">O lanp é um sistema para controle financeiro pessoal ou de pequenas
-					empresas. Com ele você poderá fazer a organização de receitas e
-					despesas dentro de um período de tempo, tipos de entrada e saída, e ainda acompanhar tudo isso em
-					tempo real na dashboard de posição financeira</p>
+					Sistema de lançamento financeiro pessoal. Com ele você poderá fazer a
+					organização de receitas e despesas dentro de um período de tempo,
+					tipos de entrada e saída, e ainda acompanhar tudo isso em tempo
+					real na dashboard de posição situação financeira</p>
 				<div class="row">
 					<div class="item col-lg-4 col-md-6 col-12">
 						<div class="icon-holder">
@@ -164,7 +164,7 @@
 								gráficos iterativos e resumos simplificados</p>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 
@@ -208,7 +208,6 @@
 			</div>
 		</c:otherwise>
 	</c:choose>
-
 </body>
 </html>
 
