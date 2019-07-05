@@ -87,6 +87,12 @@ label {
 }
 
 
-
+.navbar-toggler {
+	padding:10px;
+	border:1px solid #FFF;
+	border-radius:5px;
+	background:none;
+	margin-top:10px;
+}
 
 

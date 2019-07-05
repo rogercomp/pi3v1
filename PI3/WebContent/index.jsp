@@ -12,9 +12,6 @@
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
 	rel="stylesheet" type="text/css">
-
-
-
 	
 <script defer=""
 	src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"
@@ -23,29 +20,23 @@
 	
 <!-- Bootstrap CSS -->
 
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="../css/style.css" rel="stylesheet" type="text/css" />
-<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<c:choose>
 		<c:when test="${usuario != NULL}">
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
-					 <div class="navbar-header">
-						<button type="button" class="navbar-toggler"
-							data-toggle="collapse" data-target="#navbar">
-							<span class="sr-only">Toggle navigation</span> <span
-								class="navbar-toggler-icon"></span>
-						</button>
-						<a class="navbar-brand"
-							href="http://localhost:8080/lanp/frontcontroller/login">LANP</a>
-					</div>
+				     <a class="navbar-brand" href="#">LANP</a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+					
 					
 					<div id="navbar" class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-left">
